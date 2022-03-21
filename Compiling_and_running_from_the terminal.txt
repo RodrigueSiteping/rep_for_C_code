@@ -1,0 +1,12 @@
+gcc -g file.c  -o nameForTheExecutable
+./nameForTheExecutable
+
+
+delete all of the png image files in the current working directory.
+rm *.png
+
+It does not prompt for confirmation even if files are write-protected.
+rm -f filename
+
+delete directories that are not empty and to suppress these prompts,
+rm -rf directory

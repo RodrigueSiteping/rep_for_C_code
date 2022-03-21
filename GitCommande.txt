@@ -1,0 +1,14 @@
+Configurer Git:
+
+git config --global user.name "Votre Nom"
+git config --global user.email "youremail@domain.com"
+
+autres commandes
+
+clone git (url)
+git add (noms de fichiers)
+git commit -m "(message validé)
+git push -u maître d'origine
+"Modification Internet"
+ 
+git remote add source master (url)
