@@ -6,8 +6,8 @@ git config --global user.email "youremail@domain.com"
 autres commandes
 
 clone git (url)
-git add (noms de fichiers) ou git add. : ajoute tous les fichier du dossie
+git add (noms de fichiers) ou  git add. : ajoute tous les fichier du dossie
 git commit -m "(message validé)" : commentaire du git add precedent
-git push -u maître d'origine : envoi les fichiers en ligne avec le commentaire
+git push -u origin main : envoi les fichiers en ligne avec le commentaire
  
 git remote add source master (url)
