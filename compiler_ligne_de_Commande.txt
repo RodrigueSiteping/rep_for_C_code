@@ -1,0 +1,72 @@
+1. Öffne ein Terminal-Fenster.
+2.  Tippe gcc --version ein und drücke auf ↵ Enter. Dies sollte die Versionsnummer des C-Compilers zurückgeben. Wenn der Befehl nicht gefunden wird, ist GCC wahrscheinlich nicht installiert.[1]
+
+    Wenn er nicht installiert ist, lies in der Dokumentation deiner Linux Distribution nach, um zu erfahren, wie du das korrekte Package bekommst.
+    Wenn du ein C++ Program kompilierst, verwende anstelle von "gcc" "g++".
+
+3.  Navigiere in das Verzeichnis, in dem du den Quellcode gespeichert hast.
+
+    Wenn sich die Datei mit deinem Quelltext “main.c” z. B. in /usr/wikiHow/source befindet, tippe cd /usr/wikiHow/source ein.
+
+4.  Tippe gcc main.c –o HelloWorld ein. Ersetze “main.c” durch den Namen deiner Quelldatei und "HelloWorld" mit dem Namen des fertigen Programms. Das Programm wird jetzt kompiliert.
+
+    Wenn du Fehler siehst und detailliertere Informationen über diese möchtest, verwende gcc -Wall -o errorlog file1.c. Sieh dir dann die "errorlog" Datei im aktuellen Verzeichnis an mit cat errorlog.
+    Um ein Programm aus mehreren Quelldateien zu kompilieren, verwende gcc -o outputfile file1.c file2.c file3.c.
+    Um mehrere Programme auf einmal mit mehreren Quelldateien zu kompilieren, verwende gcc -c file1.c file2.c file3.c.
+
+5. Führe das neu kompilierte Programm aus. Tippe &# 46;/HelloWorld ein, aber ersetze 
+    “HelloWorld” durch den Namen deines Programms. 
+
+9. Öffne die Kommandozeile als Administrator. Dies geht so:
+
+    Drücke auf ⊞ Win+S und tippe cmd ein.
+    Klicke mit der rechten Maustaste in den Suchergebnissen auf 
+        Kommandozeile und wähle dann "Als Administrator ausführen".
+    Klicke auf Ja, um die Änderungen zu erlauben.
+
+10. Navigiere in den Ordner, in dem du den Quellcode gespeichert hast.
+
+    Wenn die Quelldatei mit dem Namen helloworld.c sich  z.B. in C:\Source\Programs 
+        befindet, tippe cd C:\Source\Programs ein.
+
+11. Tippe gcc helloworld.c –o helloworld.exe ein. Ersetze “helloworld” durch den Namen 
+        des Quellcodes und das Programm. Wenn das Programm kompiliert wurde, wirst du ohne Fehlermeldung wieder auf die Kommandozeile zurückgebracht.[4]
+
+    Alle angezeigten Programmierfehler müssen korrigiert werden, bevor das Programm 
+        kompiliert werden kann.
+
+
+
+        Tipps
+
+    Wenn du den Code mit dem Flag -g kompilierst, werden Debug-Informationen erzeugt, welches 
+        der entsprechende Debugger, GDB, nutzen kann, damit das Debugging besser funktioniert.
+
+    Es können Makefiles erzeugt werden, damit das Kompilieren großer Programme einfacher wird.
+    
+    Wenn du stark Optimierungen einsetzt, sei dir darüber im Klaren, dass eine Optimierung 
+        zugunsten der Geschwindigkeit im Gegenzug einen Nachteil in Bezug auf die Größe und manchmal auch die Genauigkeit haben kann, ebenso umgekehrt.
+    
+    Wenn du ein C++ Programm kompilierst, verwende G++ genauso, wie du GCC verwenden würdest. Denke daran, dass C++ Dateien anstellen von .c die Dateiendung .cpp haben.
+
+ C++ :
+ 
+1. g++ (executes the compiler)
+2. -Wall (turns on all warnings)
+3. -std=c++14 (uses the 14 c++ standard)
+4. main.cpp (the file you want to compile)
+5. -o <filename> (creates a custom filename)
+
+custom: (creates a file named: test)
+g++ -Wall -std=c++14 main.cpp -o test
+
+compile: (runs file test)
+./test
+— — — — — — — — — — — — — –
+default: (creates default file: a.out)
+g++ -Wall -std=c++14 main.cpp
+
+compile: (runs file a.out)
+./a.out
+
+

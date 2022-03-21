@@ -13,7 +13,7 @@ int main()
             pgcd = i;
     }
   
-    printf("PGCD de %d et %d = %d", nbr1, nbr2, pgcd);
+    printf("PGCD(%d,%d) = %d", nbr1, nbr2, pgcd);
     return 0;
 }
 
