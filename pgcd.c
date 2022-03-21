@@ -17,7 +17,7 @@ int main()
     return 0;
 }
 
-/* RECURSIF
+/* pgcd_RECURSIF_1
 long pgcd (long a, long b) {
   long r;
   
@@ -26,5 +26,23 @@ long pgcd (long a, long b) {
     return b;
   else
     return pgcd (b, r);
+}
+*/
+
+/* pgcd_RECursif_2
+long pgcd (long a, long b, long *u, long *v) {
+  long q, r, d, s, t;
+  
+  q = a / b;
+  r = a % b;
+  if (r == 0) {
+    *u = 0;
+    *v = 1;
+    return b;
+  }
+  d = pgcd (b, r, &s, &t);
+  *u = t;
+  *v = s - q * t;
+  return d;
 }
 */
